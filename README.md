@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✦ BoardMind: Your AI Whiteboard Tutor
 
-## Getting Started
+<div align="center">
+  <p><strong>Transform messy whiteboard photos into structured, interactive study guides instantly.</strong></p>
+  <p><i>Built for the <b>Build With Gemma @ Bangladesh</b> Hackathon (Multimodal Track)</i></p>
+</div>
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📖 Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+In fast-paced lectures, students often snap photos of dense, complex whiteboards filled with diagrams, math, and messy handwriting. **BoardMind** is an intelligent web application that automates the tedious process of transcribing and organizing these notes.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Powered by Google's **Gemma 4 Multimodal API**, BoardMind ingests photos of educational materials and instantly generates a comprehensive, interactive "Study Pack" with a single click.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Features
 
-## Learn More
+- **🎓 Multimodal Intelligence:** Understands handwritten text, complex mathematical formulas (LaTeX), diagrams, and flowcharts.
+- **⚡ Automated Study Workflows:** Generates specific, highly-structured outputs based on what you need:
+  - **📝 Study Notes:** Clean, formatted Markdown summaries with headers and bullet points.
+  - **🃏 Flashcards:** Auto-generates deep-understanding Q&A flashcards for spaced repetition.
+  - **🎯 Practice Quiz:** Creates a 5-question multiple-choice quiz based purely on the board's content.
+  - **📐 Formula Sheet:** Extracts only the math and variables into a clean LaTeX cheat sheet.
+- **🌍 Bilingual Support:** Native toggle to generate all study materials in either **English** or **Bangla** to bridge the language gap for local students.
+- **🛡️ Built-in Guardrails:** Automatically detects and rejects non-educational images (selfies, memes, etc.) to ensure the tool remains strictly academic.
+- **💾 Export Ready:** One-click download of your generated notes as a `.md` file.
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend:** Next.js 16 (App Router), React, Tailwind CSS
+- **Styling:** Custom "Editorial Academic" design system (raw CSS)
+- **AI Model:** Gemma-4-31b-it (via Google AI Studio / Generative AI SDK)
+- **Markdown Rendering:** `react-markdown` with `remark-math` and `rehype-katex` for beautiful LaTeX formula rendering.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Getting Started
 
-## Deploy on Vercel
+### Prerequisites
+- Node.js (v18+)
+- A [Google AI Studio API Key](https://aistudio.google.com/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the repository**
+   \`\`\`bash
+   git clone https://github.com/yourusername/boardmind.git
+   cd boardmind
+   \`\`\`
+
+2. **Install dependencies**
+   \`\`\`bash
+   npm install
+   \`\`\`
+
+3. **Set up Environment Variables**
+   Create a \`.env.local\` file in the root directory and add your API key:
+   \`\`\`env
+   GEMINI_API_KEY=your_google_ai_studio_api_key
+   \`\`\`
+
+4. **Run the Development Server**
+   \`\`\`bash
+   npm run dev
+   \`\`\`
+   Open [http://localhost:3000](http://localhost:3000) in your browser to start studying!
+
+## 🤝 Contribution
+Feel free to open an issue or submit a pull request if you have ideas on how to improve BoardMind!
+
+## 📜 License
+This project is open-source and available under the [MIT License](LICENSE).
