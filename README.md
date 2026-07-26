@@ -3,6 +3,8 @@
 <div align="center">
   <p><strong>Transform messy whiteboard photos into structured, interactive study guides instantly.</strong></p>
   <p><i>Built for the <b>Build With Gemma @ Bangladesh</b> Hackathon (Multimodal Track)</i></p>
+  <br/>
+  <a href="https://board-mind-seven.vercel.app/"><strong>🔥 Try the Live Demo here</strong></a>
 </div>
 
 ---
@@ -41,26 +43,26 @@ Powered by Google's **Gemma 4 Multimodal API**, BoardMind ingests photos of educ
 ### Installation
 
 1. **Clone the repository**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/sheikh-mohammad-rakib/boardmind.git
    cd boardmind
-   \`\`\`
+   ```
 
 2. **Install dependencies**
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. **Set up Environment Variables**
-   Create a \`.env.local\` file in the root directory and add your API key:
-   \`\`\`env
+   Create a `.env.local` file in the root directory and add your API key:
+   ```env
    GEMINI_API_KEY=your_google_ai_studio_api_key
-   \`\`\`
+   ```
 
 4. **Run the Development Server**
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
    Open [http://localhost:3000](http://localhost:3000) in your browser to start studying!
 
 ## 🤝 Contribution
