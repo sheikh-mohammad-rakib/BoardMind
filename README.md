@@ -42,7 +42,7 @@ Powered by Google's **Gemma 4 Multimodal API**, BoardMind ingests photos of educ
 
 1. **Clone the repository**
    \`\`\`bash
-   git clone https://github.com/yourusername/boardmind.git
+   git clone https://github.com/sheikh-mohammad-rakib/boardmind.git
    cd boardmind
    \`\`\`
 
