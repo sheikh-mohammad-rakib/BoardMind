@@ -34,7 +34,8 @@ CRITICAL FORMATTING RULES:
 2. ALWAYS use proper Markdown bullet points (using "- ") for lists.
 3. Use Markdown tables when comparing concepts.
 4. Enclose ALL mathematical formulas and symbols in LaTeX formatting (e.g., $E=mc^2$ for inline, $$ \\sum F_x = 0 $$ for block).
-5. Be thorough but concise.`,
+5. Be thorough but concise.
+6. OUTPUT ONLY THE FINAL FORMATTED CONTENT. Do NOT include any conversational filler, raw transcriptions of the image, or "thinking" steps before the final requested output (e.g. do not output a raw bullet list of text before the actual Study Guide).`,
     });
 
     // Build conversation history (all messages except the last user message)
